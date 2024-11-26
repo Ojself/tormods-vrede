@@ -14,8 +14,8 @@ function App() {
   const [showNutrition, setShowNutrition] = useState(false);
 
   return (
-    <div id="wrapper">
-      <img src={tormod} id="main-img" alt="Tormods vrede" />
+    <div className="wrapper">
+      <img src={tormod} className="main-img" alt="Tormods vrede" />
       <div className="right-wrapper">
         <img src={logo} className="logo" alt="Tormods vrede logo" />
         <button onClick={() => setShowImageGallery(true)}>Brukstips</button>

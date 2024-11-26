@@ -5,12 +5,13 @@
   overflow: hidden;
 }
 
-#wrapper {
+.wrapper {
   width: 100vw;
   height: 100vh;
+  overflow: hidden; /* Keep the overflow hidden within the wrapper */
 }
 
-#wrapper #main-img {
+.wrapper .main-img {
   width: 100%;
   position: relative;
   height: 100%;
@@ -44,6 +45,55 @@
 
 .right-wrapper button {
   width: 80%;
+}
+
+
+
+button {
+  padding: 12px 24px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 80%;
+  background-color: #ff5722; /* A nice orange color */
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64a19; /* Darken on hover */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffccbc; /* Slight glow on focus */
+}
+
+
+.wordart {
+  font-family: Arial, sans-serif;
+  font-size: 8em;
+  font-weight: bold;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wordart.blues .text {
+  font-family: Impact, sans-serif;
+  color: #24c0fd;
+  -webkit-text-stroke: 0.01em #0000aa;
+  text-shadow: 0.13em -0.13em 0px #0000aa;
+  letter-spacing: -0.05em;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -83,58 +133,6 @@
   .logo {
     height: 150;
   }
-}
-
-button {
-  padding: 12px 24px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 8px;
-  width: 80%;
-  background-color: #ff5722; /* A nice orange color */
-  color: #ffffff;
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #e64a19; /* Darken on hover */
-}
-
-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #ffccbc; /* Slight glow on focus */
-}
-
-#wrapper {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; /* Keep the overflow hidden within the wrapper */
-}
-
-.wordart {
-  font-family: Arial, sans-serif;
-  font-size: 8em;
-  font-weight: bold;
-  position: absolute;
-  top: 70%;
-  left: 0;
-  z-index: 1;
-  display: inline-block;
-  white-space: nowrap;
-  animation: marquee 10s linear infinite;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.wordart.blues .text {
-  font-family: Impact, sans-serif;
-  color: #24c0fd;
-  -webkit-text-stroke: 0.01em #0000aa;
-  text-shadow: 0.13em -0.13em 0px #0000aa;
-  letter-spacing: -0.05em;
 }
 
 @keyframes marquee {
