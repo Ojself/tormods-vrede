@@ -37,3 +37,41 @@
 .close-button:hover {
   background-color: #e64a19;
 }
+
+
+.modal-content h2,
+.modal-content h3 {
+  margin-top: 0;
+}
+
+.modal-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.nutrition-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.nutrition-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.nutrition-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.nutrition-table td:first-child {
+  font-weight: bold;
+}
+
+.nutrition-table td:nth-child(1) {
+  width: 70%;
+}
