@@ -35,8 +35,8 @@ function App() {
       <img src={tormod} className="main-img" alt="Tormods vrede" />
       <div className="right-wrapper">
         <img src={logo} className="logo" alt="Tormods vrede logo" />
-        <button onClick={() => setShowImageGallery(true)}>Brukstips</button>
-        <button onClick={() => setShowNutrition(true)}>Næringsinnhold</button>
+        <button className="action-button" onClick={() => setShowImageGallery(true)}>Brukstips</button>
+        <button className="action-button" onClick={() => setShowNutrition(true)}>Næringsinnhold</button>
       </div>
       {firePositions.map((left, index) => (
         <img

@@ -43,13 +43,13 @@
   width: 80%;
 }
 
-button {
+.action-button {
   padding: 12px 24px;
   margin-top: 10px;
   border: none;
   border-radius: 8px;
   width: 80%;
-  background-color: #ff5722; /* A nice orange color */
+  background-color: #ff5722; 
   color: #ffffff;
   font-size: 1em;
   font-weight: bold;
@@ -57,13 +57,13 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #e64a19; /* Darken on hover */
+.action-button:hover {
+  background-color: #e64a19; 
 }
 
-button:focus {
+.action-button:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #ffccbc; /* Slight glow on focus */
+  box-shadow: 0 0 0 2px #ffccbc; 
 }
 
 
