@@ -1,3 +1,3 @@
 # Tormods vrede
 
-[Tormodsvrede](https://ojself.github.io/tormods-vrede/)
+[Tormods vrede](https://ojself.github.io/tormods-vrede/)
