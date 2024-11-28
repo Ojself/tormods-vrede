@@ -1,3 +1,12 @@
+.modal-header{
+  margin-bottom: 15px;
+}
+
+.modal-list{
+  margin-bottom: 15px;
+}
+
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -12,6 +21,7 @@
 }
 
 .modal-content {
+  position: relative; /* Added for absolute positioning within */
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
@@ -19,7 +29,22 @@
   max-width: 500px;
   max-height: 80%;
   overflow-y: auto; /* Add scroll if content overflows */
-  position: relative;
+}
+
+.doge-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allows clicks to pass through to modal content */
+}
+
+.doge-phrase {
+    position: absolute;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .close-button {
@@ -75,3 +100,10 @@
 .nutrition-table td:nth-child(1) {
   width: 70%;
 }
+
+.image-gallery-left-nav:hover .image-gallery-svg:hover,
+.image-gallery-right-nav:hover .image-gallery-svg:hover,
+.image-gallery-icon:hover {
+  color: #ff5722;
+}
+

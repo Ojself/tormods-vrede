@@ -10,6 +10,7 @@ import egg from '/egg.webp';
 import handsoap from '/hand-soap.png';
 import icecream from '/ice-cream.webp';
 
+import popcorn from '/popcorn.png';
 import mashed from '/mashed.webp';
 import noodles from '/noodles.webp';
 import pizza from '/pizza.webp';
@@ -22,47 +23,52 @@ function ImageGalleryModal({ onClose }) {
   const images = [
     {
       original: agurk,
-      thumbnail: agurk,
+      
       description: "Agurksalat"
     },
     {
       original: cottage,
-      thumbnail: cottage,
+      
       description: "Cottage cheese"
     },
     {
       original: dumplings,
-      thumbnail: dumplings,
+      
       description: "Dumplings"
     },
     {
       original: egg,
-      thumbnail: egg,
+      
       description: "Egg"
     },
     {
       original: icecream,
-      thumbnail: icecream,
+      
       description: "Iskrem"
     },
     {
       original: noodles,
-      thumbnail: noodles,
+      
       description: "Noodles"
     },
     {
       original: pizza,
-      thumbnail: pizza,
+      
       description: "Pizza"
     },
     {
+      original: popcorn,
+      
+      description: "Popcorn"
+    },
+    {
       original: mashed,
-      thumbnail: mashed,
+      
       description: "Potetstappe"
     },
     {
       original: handsoap,
-      thumbnail: handsoap,
+      
       description: "Håndsåpe?"
     },
   ];
@@ -72,7 +78,7 @@ function ImageGalleryModal({ onClose }) {
         <h2>Brukstips</h2>
         
         
-        <ImageGallery showPlayButton={false} items={images} />
+        <ImageGallery showThumbnails={false} showPlayButton={false} items={images} />
         <button className="close-button" onClick={onClose}>Lukk</button>
       </div>
     </div>
