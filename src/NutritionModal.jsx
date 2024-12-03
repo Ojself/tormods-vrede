@@ -27,17 +27,18 @@ function NutritionModal({ onClose }) {
 
                 <h2 className="modal-header">Ingredienser & næringsinnhold</h2>
                 
-                <h3 className="modal-subheader">Ingredienser:</h3>
+                <h3 className="modal-subheader">Ingredienser</h3>
                 <ul className="modal-list">
                     <li>- Rapsolje</li>
                     <li>- Kinesisk chiliflak</li>
                     <li>- Knust Sandefjord chili </li>
                     <li>- Havsalt</li>
                 </ul>
-                <h3 className="modal-subheader">Krydder:</h3>
+                <h3 className="modal-subheader">Krydder</h3>
                 <ul className="modal-list">
                     <li>- Stjerneanis</li>
                     <li>- Kanelstang</li>
+                    <li>- Nellik</li>
                     <li>- Laurbærblad</li>
                     <li>- Sichuanpepper</li>
                 </ul>
