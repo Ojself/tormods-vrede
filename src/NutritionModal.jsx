@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 function NutritionModal({ onClose }) {
      const dogePhrases = [
-        { text: 'Much spice', top: '10%', left: '68%', color: 'red' },
-        { text: 'Wow', top: '26%', left: '35%', color: 'blue' },
-        { text: 'Very chili', top: '35%', left: '55%', color: 'green' },
-        { text: 'Many hot', top: '55%', left: '42%', color: 'orange' },
-        { text: 'Such burn omg', top: '78%', left: '24%', color: 'purple' },
+        { text: 'Much spice', top: '10%', left: '64%', color: 'red' },
+        { text: 'Wow', top: '26%', left: '43%', color: 'blue' },
+        { text: 'Very chili', top: '35%', left: '25%', color: 'green' },
+        { text: 'Many hot', top: '55%', left: '44%', color: 'orange' },
+        { text: 'Such burn omg', top: '79%', left: '24%', color: 'purple' },
     ];
     return (
         <div className="modal-overlay" onClick={onClose}>
