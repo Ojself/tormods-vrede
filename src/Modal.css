@@ -2,6 +2,21 @@
   margin-bottom: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  .modal-header{
+    font-size:15px;
+  }
+  .modal-subheader{
+    font-size:13px
+  }
+  .modal-list{
+    font-size:12px
+  }
+  .nutrition-table{
+    font-size:12px
+  }
+}
+
 .modal-list{
   margin-bottom: 15px;
 }
@@ -94,7 +109,7 @@
 }
 
 .nutrition-table td:first-child {
-  font-weight: bold;
+  font-weight:bold
 }
 
 .nutrition-table td:nth-child(1) {

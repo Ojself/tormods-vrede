@@ -5,8 +5,8 @@ function NutritionModal({ onClose }) {
      const dogePhrases = [
         { text: 'Much spice', top: '10%', left: '64%', color: 'red' },
         { text: 'Wow', top: '26%', left: '43%', color: 'blue' },
-        { text: 'Very chili', top: '35%', left: '25%', color: 'green' },
-        { text: 'Many hot', top: '55%', left: '44%', color: 'orange' },
+        { text: 'Very chili', top: '35%', left: '65%', color: 'green' },
+        { text: 'Many hot', top: '68%', left: '40%', color: 'orange' },
         { text: 'Such burn omg', top: '79%', left: '24%', color: 'purple' },
     ];
     return (
@@ -27,28 +27,28 @@ function NutritionModal({ onClose }) {
 
                 <h2 className="modal-header">Ingredienser & næringsinnhold</h2>
                 
-                <h3>Ingredienser:</h3>
+                <h3 className="modal-subheader">Ingredienser:</h3>
                 <ul className="modal-list">
                     <li>- Rapsolje</li>
                     <li>- Kinesisk chiliflak</li>
                     <li>- Knust Sandefjord chili </li>
                     <li>- Havsalt</li>
                 </ul>
-                <h3>Krydder:</h3>
+                <h3 className="modal-subheader">Krydder:</h3>
                 <ul className="modal-list">
                     <li>- Stjerneanis</li>
                     <li>- Kanelstang</li>
                     <li>- Laurbærblad</li>
                     <li>- Sichuanpepper</li>
                 </ul>
-                <h3>Aromatikk</h3>
+                <h3 className="modal-subheader">Aromatikk</h3>
                 <ul className="modal-list">
                     <li>- Hvitløk</li>
                     <li>- Sjalottløk</li>
                     <li>- Sesamfrø</li>
                     <li>- Sesamolje</li>
                 </ul>
-                <h3>Næringsinnhold (per spiseskje):</h3>
+                <h3 className="modal-subheader">Næringsinnhold (per spiseskje):</h3>
                 <table className="nutrition-table">
                     <tbody>
                         <tr>
